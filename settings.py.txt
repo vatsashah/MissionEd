@@ -1,0 +1,23 @@
+# Make below changes in your settings.py file,
+
+INSTALLED_APPS = [
+    'music.apps.MusicConfig',
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+    'django.contrib.sites',
+    'allauth',
+    'allauth.account', 
+    'allauth.socialaccount',
+    'allauth.socialaccount.providers.google',
+    'allauth.socialaccount.providers.facebook',
+]
+
+# In the end of the file add below code,
+
+SITE_ID = 1
+LOGIN_REDIRECT_URL = "/"
+

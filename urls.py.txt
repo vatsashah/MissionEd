@@ -1,0 +1,7 @@
+# In urls.py under urlpatterns add,
+
+urlpatterns = [
+    path ('accounts/',include('allauth.urls')),
+]
+
+
